@@ -19,7 +19,7 @@ void loop(void) {
     time_t t0 = time(0);
     srand48(time(0));
     for(;;) {
-    	// show output every 10 second
+    	// show output every second
     	if (time(0)-t0 > 0) {
     		t0 = time(0);
     		fprintf(stdout, "%.16Lf\n",
